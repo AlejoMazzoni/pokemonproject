@@ -1,0 +1,45 @@
+.formContainer {
+  border-radius: 1rem;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 25rem;
+  height: 18rem;
+  padding: 2.5rem;
+  gap: 1rem;
+  z-index: 9999;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 15rem;
+  gap: 1rem;
+}
+.emailContainer,
+.passwordContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.emailContainer input,
+.passwordContainer input {
+  height: 2rem;
+  border-radius: 1rem;
+  border: none;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.buttonsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}

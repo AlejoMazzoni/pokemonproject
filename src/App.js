@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import styles from "./App.module.css";
+import React, { useState } from "react";
+import { Route, Routes } from "react-router-dom";
+import MyPokemons from "./components/MyPokemons/MyPokemons";
+import Header from "./components/Header/Header";
+import MainPage from "./components/MainPage/MainPage";
+import CreatePokemon from "./components/CreatePokemon/CreatePokemon";
+import BuyPokemons from "./components/BuyPokemons/BuyPokemons";
 
 function App() {
+  const [formIsVisible, setFormIsVisible] = useState(false);
+
+  const formIsVisibleHandler = () => {
+    setFormIsVisible((prevState) => !prevState);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.app}>
+      <Header onClick={formIsVisibleHandler} />
+      <Routes>
+        <Route
+          path="/"
+          element={<MainPage onFormIsVisible={formIsVisible} />}
+        />
+        <Route path="/my-pokemons" element={<MyPokemons />} />
+        <Route path="/create-pokemon" element={<CreatePokemon />} />
+        <Route path="/buy-pokemons" element={<BuyPokemons />} />
+      </Routes>
     </div>
   );
 }

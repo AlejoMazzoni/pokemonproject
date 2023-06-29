@@ -1,0 +1,23 @@
+.pokemonContainer,
+.pokemonSelectedContainer {
+  align-self: center;
+  background-color: brown;
+  margin: 1rem 3rem;
+  padding: 2rem;
+  width: 10rem;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0rem 1rem;
+  box-shadow: -1px -1px 10px -1px rgba(0, 0, 0, 0.75);
+}
+
+.pokemonSelectedContainer {
+  border: green;
+}
+
+h3 {
+  font-size: 0.75rem;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+}

@@ -1,0 +1,44 @@
+.createPokemonContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 0 auto;
+  width: 60rem;
+  min-height: 55rem;
+  background-color: rgb(223, 223, 228);
+}
+
+h1,
+h3 {
+  text-align: center;
+}
+
+.textContainer {
+  margin-top: 2rem;
+  align-self: center;
+  width: 50rem;
+}
+
+.newPokemonContainer {
+  align-self: center;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+}
+
+.openCreatePokemon {
+  align-self: center;
+  padding: 0.8rem;
+  width: 12rem;
+  border: none;
+  border-radius: 2rem;
+}
+
+.closeCreatePokemon {
+  width: 2rem;
+  align-self: end;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.35rem;
+  cursor: pointer;
+}

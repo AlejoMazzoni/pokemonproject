@@ -1,0 +1,26 @@
+section {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 3rem;
+}
+
+img {
+  border-radius: 1rem;
+  height: 45rem;
+  width: 35rem;
+}
+
+.textContainer {
+  width: 25rem;
+}
+
+.playButton {
+  background-color: #3245f5;
+  color: #fff50a;
+  font-weight: 600;
+  padding: 1rem 3rem;
+  border-radius: 3rem;
+  border: none;
+  font-size: 1.3rem;
+  margin-left: 0.5rem;
+}

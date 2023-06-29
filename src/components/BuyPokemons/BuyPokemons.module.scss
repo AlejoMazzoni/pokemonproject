@@ -1,0 +1,29 @@
+.buyPokemonsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  width: 80rem;
+  margin: 0 auto;
+
+  .pokemonsContainer {
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    background-color: blueviolet;
+    width: 70rem;
+    max-height: 35rem;
+  }
+
+  .fetchButton {
+    margin: 0 auto;
+    background-color: red;
+    height: 2.7rem;
+    border-radius: 3rem;
+    border: none;
+    font-weight: 600;
+    font-size: 2rem;
+    cursor: pointer;
+    align-self: center;
+  }
+}
