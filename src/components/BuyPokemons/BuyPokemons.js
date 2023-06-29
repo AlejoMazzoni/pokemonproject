@@ -38,40 +38,43 @@ const BuyPokemons = () => {
   // }, []);
 
   return (
-    <div className={styles.buyPokemonsContainer}>
-      <button
-        className={styles.fetchButton}
-        onClick={() => {
-          setPokemons([]);
-          setUrl(prevUrl);
-        }}
-        disabled={!prevUrl}
-      >
-        ←
-      </button>
-      <div className={styles.pokemonsContainer}>
-        {pokemons.map((pokemon) => {
-          console.log(pokemon);
-          return (
-            <Pokemon
-              key={pokemon.id}
-              name={pokemon.name}
-              image={pokemon.sprites.front_default}
-            />
-          );
-        })}
-      </div>
+    <>
+      <div className={styles.buyPokemonsContainer}>
+        <button
+          className={styles.fetchButton}
+          onClick={() => {
+            setPokemons([]);
+            setUrl(prevUrl);
+          }}
+          disabled={!prevUrl}
+        >
+          ←
+        </button>
+        <div className={styles.pokemonsContainer}>
+          {pokemons.map((pokemon) => {
+            console.log(pokemon);
+            return (
+              <Pokemon
+                key={pokemon.id}
+                name={pokemon.name}
+                image={pokemon.sprites.front_default}
+                type={pokemon.types[0].type.name}
+              />
+            );
+          })}
+        </div>
 
-      <button
-        className={styles.fetchButton}
-        onClick={() => {
-          setPokemons([]);
-          setUrl(nextUrl);
-        }}
-      >
-        →
-      </button>
-    </div>
+        <button
+          className={styles.fetchButton}
+          onClick={() => {
+            setPokemons([]);
+            setUrl(nextUrl);
+          }}
+        >
+          →
+        </button>
+      </div>
+    </>
   );
 };
 

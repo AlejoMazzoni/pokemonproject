@@ -2,17 +2,16 @@
   display: flex;
   flex-wrap: wrap;
   background-color: white;
+  height: 100vh;
   width: 80rem;
   margin: 0 auto;
 
   .pokemonsContainer {
-    overflow: auto;
+    overflow: hidden;
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
-    background-color: blueviolet;
     width: 70rem;
-    max-height: 35rem;
   }
 
   .fetchButton {
