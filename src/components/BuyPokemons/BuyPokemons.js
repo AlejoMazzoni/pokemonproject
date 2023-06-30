@@ -3,6 +3,8 @@ import Pokemon from "../Pokemon/Pokemon";
 import styles from "./BuyPokemons.module.scss";
 import getPokemons from "../../services/pokemons";
 import axios from "axios";
+import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const BuyPokemons = () => {
   const [pokemons, setPokemons] = useState([]);
@@ -48,7 +50,7 @@ const BuyPokemons = () => {
           }}
           disabled={!prevUrl}
         >
-          ←
+          <FontAwesomeIcon icon={faArrowLeft} />
         </button>
         <div className={styles.pokemonsContainer}>
           {pokemons.map((pokemon) => {
@@ -72,7 +74,7 @@ const BuyPokemons = () => {
             setUrl(nextUrl);
           }}
         >
-          →
+          <FontAwesomeIcon icon={faArrowRight} />
         </button>
       </div>
     </>
