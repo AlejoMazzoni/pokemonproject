@@ -8,8 +8,13 @@
 }
 
 .titleContainer {
-  display: flex;
-  align-items: center;
+  width: 10rem;
+  height: 3rem;
+
+  img {
+    width: 17rem;
+    height: 7rem;
+  }
 }
 
 h1,

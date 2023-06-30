@@ -1,7 +1,9 @@
 import { useContext, useState } from "react";
-import styles from "./Header.module.scss";
-import AuthContext from "../../context/AuthContext";
 import { Link } from "react-router-dom";
+
+import AuthContext from "../../context/AuthContext";
+import styles from "./Header.module.scss";
+import pokemonLogo from "../../assets/images/pokemonLogo.png";
 
 const Header = (props) => {
   const ctx = useContext(AuthContext);
@@ -15,7 +17,7 @@ const Header = (props) => {
   return (
     <header className={styles.header}>
       <div className={styles.titleContainer}>
-        <h1>Pokemons</h1>
+        <img src={pokemonLogo} alt="Pokemon Logo" />
       </div>
       <div className={styles.menuContainer}>
         <div className={styles.loggedInMenu}>
