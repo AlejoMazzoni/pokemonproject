@@ -56,6 +56,7 @@ const BuyPokemons = () => {
             return (
               <Pokemon
                 key={pokemon.id}
+                id={pokemon.id}
                 name={pokemon.name}
                 image={pokemon.sprites.front_default}
                 type={pokemon.types[0].type.name}

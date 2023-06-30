@@ -11,15 +11,19 @@
   border-radius: 1rem;
 
   img {
-    width: 7rem;
-    height: 7rem;
+    width: 9rem;
+    height: 9rem;
     align-self: center;
   }
 
   .nameContainer {
+    display: flex;
+    border-bottom: 2px solid black;
+    padding: 0.3rem 0;
     h4 {
       text-align: center;
       margin: 0 auto;
+      font-size: 0.8rem;
     }
   }
 }
