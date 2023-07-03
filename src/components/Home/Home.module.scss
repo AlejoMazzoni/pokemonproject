@@ -10,18 +10,41 @@ img {
   width: 35rem;
 }
 
-.textContainer {
-  width: 25rem;
-  background-color: white;
+aside {
+  width: 30rem;
+  background-color: #9dc7e6;
+  height: 30rem;
+  border-radius: 2rem 0rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px -3px 46px 0px rgba(0, 0, 0, 0.582) inset;
 }
 
-.playButton {
-  background-color: #3245f5;
-  color: #fff50a;
-  font-weight: 600;
-  padding: 1rem 3rem;
-  border-radius: 3rem;
+p {
+  padding: 1rem;
+}
+
+.buttonsContainer {
+  align-self: center;
+}
+.buttons {
+  background-color: transparent;
   border: none;
-  font-size: 1.3rem;
-  margin-left: 0.5rem;
+  margin-left: 1rem;
+  cursor: pointer;
+
+  .playImage {
+    width: 6rem;
+    height: 4rem;
+  }
+
+  .myPokemonsImage {
+    width: 14rem;
+    height: 4rem;
+  }
+
+  .loginButton {
+    width: 6rem;
+    height: 4rem;
+  }
 }
