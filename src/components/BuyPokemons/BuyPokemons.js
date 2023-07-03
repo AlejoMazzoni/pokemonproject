@@ -50,7 +50,7 @@ const BuyPokemons = () => {
           }}
           disabled={!prevUrl}
         >
-          <FontAwesomeIcon icon={faArrowLeft} />
+          <FontAwesomeIcon icon={faArrowLeft} size="m" />
         </button>
         <div className={styles.pokemonsContainer}>
           {pokemons.map((pokemon) => {
@@ -74,7 +74,7 @@ const BuyPokemons = () => {
             setUrl(nextUrl);
           }}
         >
-          <FontAwesomeIcon icon={faArrowRight} />
+          <FontAwesomeIcon icon={faArrowRight} size="m" />
         </button>
       </div>
     </>
