@@ -1,33 +1,30 @@
 .infoContainer {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  width: 15rem;
-  height: 20rem;
+  justify-content: space-between;
+  height: 12rem;
+  width: 10rem;
   background-color: blue;
   align-self: center;
   margin: 1rem;
   border: none;
   border-radius: 1rem;
+  cursor: pointer;
 
   img {
-    width: 10rem;
-    height: 10rem;
+    width: 9rem;
+    height: 9rem;
+    align-self: center;
   }
 
-  .pokemonInfo {
+  .nameContainer {
     display: flex;
-    flex-direction: column;
-
-    h2,
+    border-bottom: 2px solid black;
+    padding: 0.3rem 0;
     h4 {
+      text-align: center;
       margin: 0 auto;
-    }
-
-    h4 {
-      margin-left: 0.5rem;
-      align-self: end;
-      padding-bottom: 0.2rem;
+      font-size: 0.8rem;
     }
   }
 }

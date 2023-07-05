@@ -4,6 +4,7 @@ import Button from "../Button/Button";
 import styles from "./Login.module.scss";
 import AuthContext from "../../context/AuthContext";
 import Backdrop from "../Backdrop/Backdrop";
+import pokedexImage from "../../assets/images/pokedexImage.png";
 
 const emailReducer = (state, action) => {
   if (action.type === "USER_INPUT") {
@@ -100,10 +101,13 @@ const Login = (props) => {
             </div>
             <div className={styles.buttonsContainer}>
               <Button type="submit">Login</Button>
+              <Button onClick={ctx.cancelForm}>Cancel</Button>
             </div>
           </form>
         )}
-        <Button onClick={ctx.cancelForm}>Cancel</Button>
+      </div>
+      <div className={styles.pokedexBackground}>
+        <img src={pokedexImage} />
       </div>
     </Backdrop>
   );

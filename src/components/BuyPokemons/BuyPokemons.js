@@ -3,6 +3,8 @@ import Pokemon from "../Pokemon/Pokemon";
 import styles from "./BuyPokemons.module.scss";
 import getPokemons from "../../services/pokemons";
 import axios from "axios";
+import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const BuyPokemons = () => {
   const [pokemons, setPokemons] = useState([]);
@@ -38,40 +40,44 @@ const BuyPokemons = () => {
   // }, []);
 
   return (
-    <div className={styles.buyPokemonsContainer}>
-      <button
-        className={styles.fetchButton}
-        onClick={() => {
-          setPokemons([]);
-          setUrl(prevUrl);
-        }}
-        disabled={!prevUrl}
-      >
-        ←
-      </button>
-      <div className={styles.pokemonsContainer}>
-        {pokemons.map((pokemon) => {
-          console.log(pokemon);
-          return (
-            <Pokemon
-              key={pokemon.id}
-              name={pokemon.name}
-              image={pokemon.sprites.front_default}
-            />
-          );
-        })}
-      </div>
+    <>
+      <div className={styles.buyPokemonsContainer}>
+        <button
+          className={styles.fetchButton}
+          onClick={() => {
+            setPokemons([]);
+            setUrl(prevUrl);
+          }}
+          disabled={!prevUrl}
+        >
+          <FontAwesomeIcon icon={faArrowLeft} size="m" />
+        </button>
+        <div className={styles.pokemonsContainer}>
+          {pokemons.map((pokemon) => {
+            console.log(pokemon);
+            return (
+              <Pokemon
+                key={pokemon.id}
+                id={pokemon.id}
+                name={pokemon.name}
+                image={pokemon.sprites.front_default}
+                type={pokemon.types[0].type.name}
+              />
+            );
+          })}
+        </div>
 
-      <button
-        className={styles.fetchButton}
-        onClick={() => {
-          setPokemons([]);
-          setUrl(nextUrl);
-        }}
-      >
-        →
-      </button>
-    </div>
+        <button
+          className={styles.fetchButton}
+          onClick={() => {
+            setPokemons([]);
+            setUrl(nextUrl);
+          }}
+        >
+          <FontAwesomeIcon icon={faArrowRight} size="m" />
+        </button>
+      </div>
+    </>
   );
 };
 

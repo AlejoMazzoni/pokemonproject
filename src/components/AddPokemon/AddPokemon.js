@@ -117,7 +117,7 @@ const AddPokemon = (props) => {
       >
         <div className={styles.infoContainer}>
           <label className={styles.newPokemonLabel} htmlFor="name">
-            Pokemon name
+            Pokemon name :
           </label>
           <input
             className={styles.newPokemonInput}
@@ -128,9 +128,9 @@ const AddPokemon = (props) => {
             placeholder="New name"
           />
         </div>
-        <div className={styles.infoContainer}>
+        <div className={styles.infoContainerGroup}>
           <label className={styles.newPokemonLabel} htmlFor="age">
-            Pokemon age
+            Age :
           </label>
           <input
             className={styles.newPokemonInput}
@@ -140,10 +140,8 @@ const AddPokemon = (props) => {
             ref={ageSelectedRef}
             placeholder="New age"
           />
-        </div>
-        <div className={styles.infoContainer}>
           <label className={styles.newPokemonLabel} htmlFor="type">
-            Pokemon type
+            Type :
           </label>
           <select name="type" id="type" ref={typeSelectedRef}>
             <option value="" disabled selected hidden>
@@ -158,9 +156,9 @@ const AddPokemon = (props) => {
             <option value="Plant">Plant</option>
           </select>
         </div>
-        <div className={styles.infoContainer}>
+        <div className={styles.infoContainerGroup}>
           <label className={styles.newPokemonLabel} htmlFor="height">
-            Pokemon height
+            Height :
           </label>
           <select name="height" id="height" ref={heightSelectedRef}>
             <option value="" disabled selected>
@@ -172,10 +170,8 @@ const AddPokemon = (props) => {
             <option value="L">3 to 4 mts</option>
             <option value="XL">5 to 6 mts</option>
           </select>
-        </div>
-        <div className={styles.infoContainer}>
           <label className={styles.newPokemonLabel} htmlFor="weight">
-            Pokemon weight
+            Weight :
           </label>
           <select name="weight" id="weight" ref={weightSelectedRef}>
             <option value="" disabled selected>
