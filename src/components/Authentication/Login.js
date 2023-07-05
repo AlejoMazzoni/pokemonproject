@@ -99,12 +99,12 @@ const Login = (props) => {
                 onChange={passwordChangeHandler}
               />
             </div>
+            <div className={styles.buttonsContainer}>
+              <Button type="submit">Login</Button>
+              <Button onClick={ctx.cancelForm}>Cancel</Button>
+            </div>
           </form>
         )}
-        <div className={styles.buttonsContainer}>
-          <Button type="submit">Login</Button>
-          <Button onClick={ctx.cancelForm}>Cancel</Button>
-        </div>
       </div>
       <div className={styles.pokedexBackground}>
         <img src={pokedexImage} />
