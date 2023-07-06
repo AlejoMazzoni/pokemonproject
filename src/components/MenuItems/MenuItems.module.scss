@@ -1,6 +1,13 @@
 .menuItems {
+  display: inline;
   list-style: none;
   padding: 1rem;
-  padding-right: 1rem;
   background-color: green;
+  margin-right: 1rem;
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+  }
 }

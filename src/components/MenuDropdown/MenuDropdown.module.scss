@@ -1,2 +1,9 @@
 .dropdown {
+  background-color: grey;
+  padding: 0;
+  .dropdownMenuItems {
+    list-style: none;
+    background-color: red;
+    padding: 0.5rem;
+  }
 }

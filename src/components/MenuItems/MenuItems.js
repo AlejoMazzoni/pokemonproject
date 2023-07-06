@@ -6,12 +6,16 @@ const MenuItems = ({ items }) => {
   return (
     <li className={styles.menuItems}>
       {items.submenu ? (
-        <>
-          <button type="button" aria-haspopup="menu">
-            {items.title}{" "}
-          </button>
-          <MenuDropdown submenus={items.submenus} />
-        </>
+        <div>
+          <Link
+            className={styles.optionDropdown}
+            role="button"
+            aria-haspopup="menu"
+          >
+            {items.title}
+          </Link>
+          <MenuDropdown submenus={items.submenu} />
+        </div>
       ) : (
         <Link to={items.url}>{items.title}</Link>
       )}

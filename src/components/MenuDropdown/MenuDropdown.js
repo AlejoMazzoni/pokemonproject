@@ -5,9 +5,11 @@ const MenuDropdown = ({ submenus }) => {
   return (
     <ul className={styles.dropdown}>
       {submenus?.map((submenu, index) => {
-        <li key={index} className={styles.dropdownMenuItems}>
-          <Link to={submenu.url}>{submenu.title}</Link>
-        </li>;
+        return (
+          <li key={index} className={styles.dropdownMenuItems}>
+            <Link to={submenu.url}>{submenu.title}</Link>
+          </li>
+        );
       })}
     </ul>
   );
