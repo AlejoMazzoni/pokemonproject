@@ -31,41 +31,6 @@ h4 {
   align-items: center;
 }
 
-ul {
-  list-style: none;
-}
-
-ul li {
-  display: inline;
-  padding: 0.9rem 2rem;
-  margin: 0 0.4rem;
-  background-color: green;
-  border-radius: 2rem;
-  color: #ebd516;
-  font-weight: 600;
-}
-
-a {
-  text-decoration: none;
-  color: #ebd516;
-  font-weight: 600;
-}
-
-.dropdownMenu {
-  position: absolute;
-  right: 16.8rem;
-  top: 5.5rem;
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  background-color: red;
-  gap: 1rem;
-}
-
-ul li ul li {
-  border-radius: 0rem;
-}
-
 .authButton {
   color: #233d22;
   font-weight: 600;

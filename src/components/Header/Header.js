@@ -1,9 +1,9 @@
 import { useContext, useState } from "react";
-import { Link } from "react-router-dom";
 
 import AuthContext from "../../context/AuthContext";
 import styles from "./Header.module.scss";
 import pokemonLogo from "../../assets/images/pokemonLogo.png";
+import Menu from "../Menu/Menu";
 
 const Header = (props) => {
   const ctx = useContext(AuthContext);
@@ -20,7 +20,9 @@ const Header = (props) => {
         <img src={pokemonLogo} alt="Pokemon Logo" />
       </div>
       <div className={styles.menuContainer}>
-        <div className={styles.loggedInMenu}>
+        <Menu />
+
+        {/* <div className={styles.loggedInMenu}>
           {ctx.isLoggedIn ? (
             <ul className={styles.loggedInMenu}>
               <li>
@@ -69,7 +71,7 @@ const Header = (props) => {
           <button className={styles.authButton} onClick={ctx.onFormHandler}>
             Log in
           </button>
-        )}
+        )} */}
       </div>
     </header>
   );
