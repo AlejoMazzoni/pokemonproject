@@ -16,9 +16,6 @@ const Header = (props) => {
 
   return (
     <header className={styles.header}>
-      <div className={styles.titleContainer}>
-        <img src={pokemonLogo} alt="Pokemon Logo" />
-      </div>
       <div className={styles.menuContainer}>
         <Menu />
 
@@ -72,6 +69,9 @@ const Header = (props) => {
             Log in
           </button>
         )} */}
+      </div>
+      <div className={styles.titleContainer}>
+        <img src={pokemonLogo} alt="Pokemon Logo" />
       </div>
     </header>
   );
