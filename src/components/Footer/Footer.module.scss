@@ -1,0 +1,64 @@
+.footerContainer {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  bottom: 0rem;
+  height: 15rem;
+  width: 100%;
+  background-color: black;
+
+  .linksContainer {
+    background-color: red;
+    width: 30rem;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2rem;
+
+    .pageLinks {
+      width: 10rem;
+
+      ul {
+        margin: 0;
+        li {
+          list-style: none;
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+
+    .socialMedia {
+      width: 4rem;
+      display: flex;
+      flex-direction: column;
+      a {
+        .icons {
+          width: 2rem;
+          height: 2rem;
+        }
+      }
+    }
+  }
+
+  .poweredByContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+    width: 25rem;
+
+    h1 {
+    }
+
+    .pokeapiImage {
+      width: 20rem;
+      height: 10rem;
+    }
+
+    .pokeball {
+      position: absolute;
+      width: 5rem;
+      height: 5rem;
+      bottom: 10rem;
+      right: 20rem;
+    }
+  }
+}

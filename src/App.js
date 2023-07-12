@@ -7,6 +7,7 @@ import MainPage from "./components/MainPage/MainPage";
 import CreatePokemon from "./components/CreatePokemon/CreatePokemon";
 import BuyPokemons from "./components/BuyPokemons/BuyPokemons";
 import video from "./assets/videos/pokeballBG.mp4";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const [formIsVisible, setFormIsVisible] = useState(false);
@@ -31,6 +32,9 @@ function App() {
           <Route path="/create-pokemon" element={<CreatePokemon />} />
           <Route path="/buy-pokemons" element={<BuyPokemons />} />
         </Routes>
+      </div>
+      <div className={styles.footerContainer}>
+        <Footer />
       </div>
     </div>
   );
