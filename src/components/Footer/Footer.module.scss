@@ -8,7 +8,6 @@
   background-color: black;
 
   .linksContainer {
-    background-color: red;
     width: 30rem;
     display: flex;
     justify-content: space-around;
@@ -20,8 +19,14 @@
       ul {
         margin: 0;
         li {
+          color: grey;
+          font-weight: 600;
           list-style: none;
           margin-bottom: 0.5rem;
+          cursor: pointer;
+        }
+        li:hover {
+          color: blue;
         }
       }
     }

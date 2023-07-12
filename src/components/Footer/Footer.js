@@ -16,20 +16,23 @@ const Footer = () => {
           <ul>
             <li>Contact</li>
             <li>About Me</li>
-            <li></li>
+            <li>FAQ</li>
           </ul>
         </div>
         <div className={styles.socialMedia}>
-          <Link>
+          <Link target="_blank" to="https://www.facebook.com/alee.mazzoni">
             <img src={facebookIcon} className={styles.icons} />
           </Link>
-          <Link>
+          <Link target="_blank" to="https://twitter.com/AleeMazzoni">
             <img src={twitterIcon} className={styles.icons} />
           </Link>
-          <Link>
+          <Link
+            target="_blank"
+            to="https://www.linkedin.com/in/alejo-mazzoni-9a1ab7191/"
+          >
             <img src={linkedinIcon} className={styles.icons} />
           </Link>
-          <Link>
+          <Link target="_blank" to="https://github.com/AlejoMazzoni">
             <img src={githubIcon} className={styles.icons} />
           </Link>
         </div>
