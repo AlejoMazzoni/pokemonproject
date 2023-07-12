@@ -1,0 +1,15 @@
+.menuItems {
+  list-style: none;
+  padding: 0.7rem;
+  max-height: 2.7rem;
+  min-width: 10rem;
+  text-align: center;
+  border: 1px solid black;
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    text-align: center;
+  }
+}

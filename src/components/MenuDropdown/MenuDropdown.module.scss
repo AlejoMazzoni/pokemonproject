@@ -1,0 +1,23 @@
+.dropdown {
+  background-color: grey;
+  display: none;
+  padding: 0;
+  position: relative;
+  left: 16.7rem;
+  top: -2rem;
+  .dropdownMenuItems {
+    list-style: none;
+    background-color: red;
+    padding: 0.5rem;
+  }
+}
+
+.show {
+  display: block;
+}
+
+.dropdownSubMenu {
+  position: relative;
+  left: 15.2rem;
+  top: -2.01rem;
+}

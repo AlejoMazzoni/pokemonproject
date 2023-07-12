@@ -1,0 +1,14 @@
+.menuDropdownContainer {
+  background-color: #84b5ff;
+  .menu {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .menuBars {
+    padding: 0.5rem;
+    border: none;
+  }
+}
