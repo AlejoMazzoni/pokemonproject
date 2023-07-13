@@ -14,9 +14,15 @@ const Footer = () => {
       <div className={styles.linksContainer}>
         <div className={styles.pageLinks}>
           <ul>
-            <li>Contact</li>
-            <li>About Me</li>
-            <li>FAQ</li>
+            <li>
+              <Link>Contact</Link>
+            </li>
+            <li>
+              <Link>About Me</Link>
+            </li>
+            <li>
+              <Link>FAQ</Link>
+            </li>
           </ul>
         </div>
         <div className={styles.socialMedia}>
@@ -39,8 +45,10 @@ const Footer = () => {
       </div>
       <div className={styles.poweredByContainer}>
         <h1>Powered By</h1>
-        <img src={pokeapiImage} className={styles.pokeapiImage} />
-        <img src={pokeball} className={styles.pokeball} />
+        <div className={styles.images}>
+          <img src={pokeapiImage} className={styles.pokeapiImage} />
+          <img src={pokeball} className={styles.pokeball} />
+        </div>
       </div>
     </div>
   );

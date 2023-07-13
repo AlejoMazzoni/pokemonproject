@@ -18,15 +18,19 @@
 
       ul {
         margin: 0;
+
         li {
-          color: grey;
-          font-weight: 600;
           list-style: none;
-          margin-bottom: 0.5rem;
-          cursor: pointer;
-        }
-        li:hover {
-          color: blue;
+          a {
+            color: grey;
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+          }
+          a:hover {
+            color: blue;
+          }
         }
       }
     }
@@ -45,25 +49,24 @@
   }
 
   .poweredByContainer {
-    display: flex;
-    flex-direction: column;
-    background-color: blue;
     width: 25rem;
 
     h1 {
+      color: Grey;
+      margin-bottom: 0;
     }
+    .images {
+      display: flex;
+      .pokeapiImage {
+        width: 18rem;
+        height: 8rem;
+      }
 
-    .pokeapiImage {
-      width: 20rem;
-      height: 10rem;
-    }
-
-    .pokeball {
-      position: absolute;
-      width: 5rem;
-      height: 5rem;
-      bottom: 10rem;
-      right: 20rem;
+      .pokeball {
+        width: 5rem;
+        height: 5rem;
+        align-self: center;
+      }
     }
   }
 }
