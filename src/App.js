@@ -6,7 +6,6 @@ import Header from "./components/Header/Header";
 import MainPage from "./components/MainPage/MainPage";
 import CreatePokemon from "./components/CreatePokemon/CreatePokemon";
 import BuyPokemons from "./components/BuyPokemons/BuyPokemons";
-import video from "./assets/videos/pokeballBG.mp4";
 import Footer from "./components/Footer/Footer";
 
 function App() {
@@ -18,11 +17,10 @@ function App() {
 
   return (
     <div className={styles.app}>
-      <video autoPlay loop muted>
-        <source src={video} type="video/mp4" />
-      </video>
-      <div className={styles.content}>
+      <div className={styles.headerContainer}>
         <Header onClick={formIsVisibleHandler} />
+      </div>
+      <div className={styles.contentContainer}>
         <Routes>
           <Route
             path="/"

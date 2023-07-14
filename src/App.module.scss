@@ -1,25 +1,6 @@
 // @import "./css/fonts.scss";
 
 .app {
-  height: 100vh;
-
-  video {
-    min-width: 100%;
-    min-height: 100%;
-  }
-
-  .content {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footerContainer {
-    position: absolute;
-    width: 100%;
-  }
+  display: flex;
+  flex-direction: column;
 }
