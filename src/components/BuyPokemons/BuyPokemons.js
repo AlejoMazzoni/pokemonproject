@@ -30,7 +30,7 @@ const BuyPokemons = () => {
 
   useEffect(() => {
     nextPage();
-  }, [url]);
+  }, [url, nextPage]);
 
   return (
     <>
