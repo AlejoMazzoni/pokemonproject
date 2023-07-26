@@ -1,10 +1,12 @@
+@import "../../css/colors.scss";
+
 .footerContainer {
   display: flex;
   justify-content: space-around;
   bottom: 0rem;
   height: 15rem;
   width: 100%;
-  background-color: black;
+  background-color: $main-background-color-dark;
 
   .linksContainer {
     width: 30rem;
@@ -21,14 +23,14 @@
         li {
           list-style: none;
           a {
-            color: grey;
+            color: $main-font-color-light;
             text-decoration: none;
             font-weight: 600;
             margin-bottom: 0.5rem;
             cursor: pointer;
           }
           a:hover {
-            color: blue;
+            color: $blue-pokemon-color;
           }
         }
       }
@@ -51,7 +53,7 @@
     width: 25rem;
 
     h1 {
-      color: Grey;
+      color: $main-font-color-light;
       margin-bottom: 0;
     }
     .images {

@@ -1,7 +1,9 @@
+@import "../../css/colors.scss";
+
 .buyPokemonsContainer {
   display: flex;
   flex-wrap: wrap;
-  background-color: white;
+  background-color: $main-background-color-light;
   height: 100vh;
   width: 80rem;
   margin: 0 auto;
@@ -19,17 +21,17 @@
     margin: 0 auto;
     padding: 0.8rem;
     border-radius: 10rem;
-    background-color: #034c8c;
+    background-color: $blue-pokemon-color;
     border: none;
     font-weight: 600;
     cursor: pointer;
     align-self: center;
-    color: #f2cb05;
+    color: $yellow-pokemon-color;
   }
 
   .fetchButton:hover {
     transition: 0.3s;
-    color: #034c8c;
-    background-color: #f2cb05;
+    color: $blue-pokemon-color;
+    background-color: $yellow-pokemon-color;
   }
 }

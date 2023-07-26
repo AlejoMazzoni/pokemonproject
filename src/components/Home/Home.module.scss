@@ -1,3 +1,5 @@
+@import "../../css/colors.scss";
+
 section {
   display: flex;
   justify-content: space-around;
@@ -12,7 +14,7 @@ img {
 
 aside {
   width: 30rem;
-  background-color: #9dc7e6;
+  background-color: $background-color-home-info;
   height: 30rem;
   border-radius: 2rem 0rem 2rem 2rem;
   display: flex;
@@ -28,7 +30,7 @@ p {
   align-self: center;
 }
 .buttons {
-  background-color: transparent;
+  background-color: $background-color-transparent;
   border: none;
   margin-left: 1rem;
   cursor: pointer;

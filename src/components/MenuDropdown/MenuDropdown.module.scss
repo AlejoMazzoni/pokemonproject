@@ -1,5 +1,7 @@
+@import "../../css/colors.scss";
+
 .dropdown {
-  background-color: grey;
+  background-color: $main-font-color-light;
   display: none;
   padding: 0;
   position: relative;
@@ -7,7 +9,6 @@
   top: -2rem;
   .dropdownMenuItems {
     list-style: none;
-    background-color: red;
     padding: 0.5rem;
   }
 }
