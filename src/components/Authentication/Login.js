@@ -107,7 +107,7 @@ const Login = (props) => {
         )}
       </div>
       <div className={styles.pokedexBackground}>
-        <img src={pokedexImage} />
+        <img src={pokedexImage} alt="Pokedex Login" />
       </div>
     </Backdrop>
   );

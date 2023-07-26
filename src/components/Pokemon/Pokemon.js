@@ -22,7 +22,7 @@ const Pokemon = (props) => {
         <h4>{props.name}</h4>
         <h4>{props.id}</h4>
       </div>
-      <img src={props.image} />
+      <img src={props.image} alt="Pokemon card" />
     </div>
   );
 };

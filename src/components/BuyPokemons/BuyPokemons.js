@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import Pokemon from "../Pokemon/Pokemon";
 import styles from "./BuyPokemons.module.scss";
 import getFromPokeapi from "../../services/pokemons";
@@ -11,13 +11,13 @@ const BuyPokemons = () => {
   const [nextUrl, setNextUrl] = useState();
   const [prevUrl, setPrevUrl] = useState();
 
-  const nextPage = async () => {
+  const nextPage = useCallback(async () => {
     setPrevUrl(url);
     const res = await getFromPokeapi(url);
     setNextUrl(res.data.next);
     setPrevUrl(res.data.previous);
     getPokemon(res.data.results);
-  };
+  }, [url]);
 
   const getPokemon = async (res) => {
     const result = await Promise.all(

@@ -27,27 +27,47 @@ const Footer = () => {
         </div>
         <div className={styles.socialMedia}>
           <Link target="_blank" to="https://www.facebook.com/alee.mazzoni">
-            <img src={facebookIcon} className={styles.icons} />
+            <img
+              src={facebookIcon}
+              className={styles.icons}
+              alt="Link to Facebook"
+            />
           </Link>
           <Link target="_blank" to="https://twitter.com/AleeMazzoni">
-            <img src={twitterIcon} className={styles.icons} />
+            <img
+              src={twitterIcon}
+              className={styles.icons}
+              alt="Link to Twitter"
+            />
           </Link>
           <Link
             target="_blank"
             to="https://www.linkedin.com/in/alejo-mazzoni-9a1ab7191/"
           >
-            <img src={linkedinIcon} className={styles.icons} />
+            <img
+              src={linkedinIcon}
+              className={styles.icons}
+              alt="Link to Linkedin"
+            />
           </Link>
           <Link target="_blank" to="https://github.com/AlejoMazzoni">
-            <img src={githubIcon} className={styles.icons} />
+            <img
+              src={githubIcon}
+              className={styles.icons}
+              alt="Link to Github"
+            />
           </Link>
         </div>
       </div>
       <div className={styles.poweredByContainer}>
         <h1>Powered By</h1>
         <div className={styles.images}>
-          <img src={pokeapiImage} className={styles.pokeapiImage} />
-          <img src={pokeball} className={styles.pokeball} />
+          <img
+            src={pokeapiImage}
+            className={styles.pokeapiImage}
+            alt="Pokeapi powered"
+          />
+          <img src={pokeball} className={styles.pokeball} alt="Pokeball" />
         </div>
       </div>
     </div>
