@@ -36,24 +36,32 @@ const Home = () => {
         </div>
         <div className={styles.buttonsContainer}>
           <button className={styles.buttons}>
-            <img src={play} className={styles.playImage} />
+            <img src={play} className={styles.playImage} alt="Link to play" />
           </button>
           {!ctx.isLoggedIn && (
             <button className={styles.buttons} onClick={ctx.onFormHandler}>
-              <img src={loginButton} className={styles.loginButton} />
+              <img
+                src={loginButton}
+                className={styles.loginButton}
+                alt="Link to login account"
+              />
             </button>
           )}
           {ctx.isLoggedIn && (
             <Link to="/my-pokemons">
               <button className={styles.buttons}>
-                <img src={myPokemons} className={styles.myPokemonsImage} />
+                <img
+                  src={myPokemons}
+                  className={styles.myPokemonsImage}
+                  alt="Link to My pokemons page"
+                />
               </button>
             </Link>
           )}
         </div>
       </aside>
       <div className={styles.imageContainer}>
-        <img src={pokemonsHome} alt="pokemons" />
+        <img src={pokemonsHome} alt="Main pokemons wallpaper" />
       </div>
     </section>
   );

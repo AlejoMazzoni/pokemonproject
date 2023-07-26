@@ -1,18 +1,16 @@
-import { useContext, useState } from "react";
-
-import AuthContext from "../../context/AuthContext";
+// import AuthContext from "../../context/AuthContext";
 import styles from "./Header.module.scss";
 import pokemonLogo from "../../assets/images/pokemonLogo.png";
 import Menu from "../Menu/Menu";
 
 const Header = (props) => {
-  const ctx = useContext(AuthContext);
+  // const ctx = useContext(AuthContext);
 
-  const [togglePokemonMenu, setTogglePokemonMenu] = useState(false);
+  // // const [togglePokemonMenu, setTogglePokemonMenu] = useState(false);
 
-  const pokemonMenuToggleHandler = () => {
-    setTogglePokemonMenu((prevState) => !prevState);
-  };
+  // const pokemonMenuToggleHandler = () => {
+  //   setTogglePokemonMenu((prevState) => !prevState);
+  // };
 
   return (
     <header className={styles.header}>
