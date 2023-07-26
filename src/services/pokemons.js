@@ -1,12 +1,12 @@
 import axios from "../utils/axios";
 
-const getPokemons = async () => {
-  const res = await axios.get();
-  if (!res) {
-    throw new Error("Something went wrong!");
+const getFromPokeapi = async (url) => {
+  try {
+    const res = await axios.get(url.replace("https://pokeapi.co/api/v2/", ""));
+    return res;
+  } catch (error) {
+    console.error(error);
   }
-  console.log(res);
-  return res;
 };
 
-export default getPokemons;
+export default getFromPokeapi;
