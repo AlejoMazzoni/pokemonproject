@@ -1,5 +1,7 @@
+@import "../../css/colors.scss";
+
 .menuDropdownContainer {
-  background-color: #84b5ff;
+  background-color: $background-color-menu;
   .menu {
     display: flex;
     flex-direction: column;
