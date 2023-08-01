@@ -1,7 +1,7 @@
 import CustomPokemon from "../CustomPokemon/CustomPokemon";
-import styles from "./NewPokemonList.module.scss";
+import styles from "./MyPokemonsList.module.scss";
 
-const NewPokemonList = (props) => {
+const MyPokemonsList = (props) => {
   return (
     <ul className={styles.newPokemonListContainer}>
       {props.pokemons.map((pokemon) => {
@@ -20,4 +20,4 @@ const NewPokemonList = (props) => {
   );
 };
 
-export default NewPokemonList;
+export default MyPokemonsList;

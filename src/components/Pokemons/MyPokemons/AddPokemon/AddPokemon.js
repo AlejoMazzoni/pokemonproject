@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import styles from "./AddPokemon.module.scss";
-import NewPokemonList from "../NewPokemonList/NewPokemonList";
+import MyPokemonsList from "../MyPokemonsList/MyPokemonsList";
 
 const AddPokemon = (props) => {
   const [pokemons, setPokemons] = useState([]);
@@ -92,7 +92,7 @@ const AddPokemon = (props) => {
   let content = <p>Found no pokemons!</p>;
 
   if (pokemons.length > 0) {
-    content = <NewPokemonList pokemons={pokemons} />;
+    content = <MyPokemonsList pokemons={pokemons} />;
     console.log(pokemons, "asdsad");
   }
 

@@ -1,11 +1,11 @@
 import { useCallback, useEffect, useState } from "react";
+import styles from "./PokemonInspector.module.scss";
+import getFromPokeapi from "../../../../services/pokemons";
 import Pokemon from "../Pokemon/Pokemon";
-import styles from "./BuyPokemons.module.scss";
-import getFromPokeapi from "../../services/pokemons";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const BuyPokemons = () => {
+const PokemonInspector = () => {
   const [pokemons, setPokemons] = useState([]);
   const [url, setUrl] = useState("pokemon");
   const [nextUrl, setNextUrl] = useState();
@@ -73,4 +73,4 @@ const BuyPokemons = () => {
   );
 };
 
-export default BuyPokemons;
+export default PokemonInspector;
