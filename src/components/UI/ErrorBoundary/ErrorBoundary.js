@@ -1,4 +1,4 @@
-import styles from "./Error.module.scss";
+import styles from "./ErrorBoundary.module.scss";
 
 const Error = (props) => {
   return <div></div>;

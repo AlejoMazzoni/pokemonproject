@@ -1,12 +1,11 @@
 import styles from "./App.module.scss";
 import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
-import MyPokemons from "./components/MyPokemons/MyPokemons";
 import Header from "./components/Header/Header";
 import MainPage from "./components/MainPage/MainPage";
-import CreatePokemon from "./components/CreatePokemon/CreatePokemon";
-import BuyPokemons from "./components/BuyPokemons/BuyPokemons";
+import PokemonInspector from "./components/Pokemons/PokemonInspector/PokemonInspector";
 import Footer from "./components/Footer/Footer";
+import CreatePokemon from "./components/Pokemons/MyPokemons/CreatePokemon/CreatePokemon";
 
 function App() {
   const [formIsVisible, setFormIsVisible] = useState(false);
@@ -26,9 +25,8 @@ function App() {
             path="/"
             element={<MainPage onFormIsVisible={formIsVisible} />}
           />
-          <Route path="/my-pokemons" element={<MyPokemons />} />
           <Route path="/create-pokemon" element={<CreatePokemon />} />
-          <Route path="/buy-pokemons" element={<BuyPokemons />} />
+          <Route path="/pokemon-inspector" element={<PokemonInspector />} />
         </Routes>
       </div>
       <div className={styles.footerContainer}>

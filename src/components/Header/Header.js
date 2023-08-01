@@ -1,7 +1,7 @@
 // import AuthContext from "../../context/AuthContext";
 import styles from "./Header.module.scss";
 import pokemonLogo from "../../assets/images/pokemonLogo.png";
-import Menu from "../Menu/Menu";
+import Menu from "../CollapsibleMenu/Menu/Menu";
 
 const Header = (props) => {
   // const ctx = useContext(AuthContext);

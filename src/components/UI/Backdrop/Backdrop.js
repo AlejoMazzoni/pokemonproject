@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import ReactDOM from "react-dom";
 import styles from "./Backdrop.module.scss";
-import AuthContext from "../../context/AuthContext";
+import AuthContext from "../../../context/AuthContext";
 
 const Backdrop = (props) => {
   const ctx = useContext(AuthContext);

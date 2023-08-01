@@ -1,9 +1,9 @@
 import { useContext, useEffect, useReducer, useRef, useState } from "react";
 
-import Button from "../Button/Button";
+import Button from "../UI/Button/Button";
 import styles from "./Login.module.scss";
 import AuthContext from "../../context/AuthContext";
-import Backdrop from "../Backdrop/Backdrop";
+import Backdrop from "../UI/Backdrop/Backdrop";
 import pokedexImage from "../../assets/images/pokedexImage.png";
 
 const emailReducer = (state, action) => {
